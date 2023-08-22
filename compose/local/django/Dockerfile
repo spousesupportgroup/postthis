@@ -84,8 +84,13 @@ COPY ./compose/local/django/celery/flower/start /start-flower
 RUN sed -i 's/\r$//g' /start-flower
 RUN chmod +x /start-flower
 
-
 # copy application code to WORKDIR
 COPY . ${APP_HOME}
+
+# Install poetry and install dependencies
+RUN pip install poetry
+WORKDIR ${APP_HOME}
+RUN poetry config virtualenvs.create false \
+  && poetry install $(test "$BUILD_ENVIRONMENT" == production && echo "--without local --with production" || echo "--without production --with local") --no-interaction --no-ansi
 
 ENTRYPOINT ["/entrypoint"]

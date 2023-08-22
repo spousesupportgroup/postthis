@@ -33,6 +33,8 @@ services:
     volumes:
       - postthis_local_postgres_data:/var/lib/postgresql/data
       - postthis_local_postgres_data_backups:/backups
+    ports:
+      - '5432:5432'
     env_file:
       - ./.envs/.local/.postgres
 
@@ -61,6 +63,8 @@ services:
   redis:
     image: redis:6
     container_name: postthis_local_redis
+    ports:
+      - "6379:6379"
 
   celeryworker:
     <<: *django
