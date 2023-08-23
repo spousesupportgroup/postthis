@@ -1,0 +1,97 @@
+version: '3'
+
+volumes:
+  postthis_local_postgres_data: {}
+  postthis_local_postgres_data_backups: {}
+
+services:
+  django: &django
+    build:
+      context: .
+      dockerfile: ./compose/local/django/Dockerfile
+    image: postthis_local_django
+    container_name: postthis_local_django
+    depends_on:
+      - postgres
+      - redis
+      - mailhog
+    volumes:
+      - .:/app:z
+    env_file:
+      - ./.envs/.local/.django
+      - ./.envs/.local/.postgres
+    ports:
+      - '8000:8000'
+    command: /start
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/production/postgres/Dockerfile
+    image: postthis_production_postgres
+    container_name: postthis_local_postgres
+    volumes:
+      - postthis_local_postgres_data:/var/lib/postgresql/data
+      - postthis_local_postgres_data_backups:/backups
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./.envs/.local/.postgres
+
+  docs:
+    image: postthis_local_docs
+    container_name: postthis_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./postthis:/app/postthis:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.0
+    container_name: postthis_local_mailhog
+    ports:
+      - "8025:8025"
+
+  redis:
+    image: redis:6
+    container_name: postthis_local_redis
+    ports:
+      - "6379:6379"
+
+  celeryworker:
+    <<: *django
+    image: postthis_local_celeryworker
+    container_name: postthis_local_celeryworker
+    depends_on:
+      - redis
+      - postgres
+      - mailhog
+    ports: []
+    command: /start-celeryworker
+
+  celerybeat:
+    <<: *django
+    image: postthis_local_celerybeat
+    container_name: postthis_local_celerybeat
+    depends_on:
+      - redis
+      - postgres
+      - mailhog
+    ports: []
+    command: /start-celerybeat
+
+  flower:
+    <<: *django
+    image: postthis_local_flower
+    container_name: postthis_local_flower
+    ports:
+      - '5555:5555'
+    command: /start-flower
