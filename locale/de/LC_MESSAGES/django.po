@@ -110,11 +110,11 @@ msgstr "Bestätigen"
 #: postthis/templates/account/email_confirm.html:27
 #, python-format
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a "
-"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
-"Dieser E-mail Bestätigunslink ist abgelaufen oder ungültig. Bitte <a href=\""
-"%(email_url)s\">fragen Sie eine neue E-mail Bestätigungsanfrage an</a>."
+"Dieser E-mail Bestätigunslink ist abgelaufen oder ungültig. Bitte <a href="
+"\"%(email_url)s\">fragen Sie eine neue E-mail Bestätigungsanfrage an</a>."
 
 #: postthis/templates/account/login.html:7
 #: postthis/templates/account/login.html:11
@@ -140,8 +140,8 @@ msgstr "oder"
 #: postthis/templates/account/login.html:41
 #, python-format
 msgid ""
-"If you have not created an account yet, then please <a "
-"href=\"%(signup_url)s\">sign up</a> first."
+"If you have not created an account yet, then please <a href=\"%(signup_url)s"
+"\">sign up</a> first."
 msgstr ""
 
 #: postthis/templates/account/login.html:55
