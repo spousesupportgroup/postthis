@@ -1,4 +1,3 @@
-# Marko Weltzer <marwel_github@bugga.de>, 2023.
 # Marko Weltzer <Marwel@users.noreply.hosted.weblate.org>, 2023.
 msgid ""
 msgstr ""
