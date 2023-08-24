@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 19:33+0200\n"
-"PO-Revision-Date: 2023-08-23 02:28+0000\n"
+"PO-Revision-Date: 2023-08-24 16:48+0000\n"
 "Last-Translator: Marko Weltzer <Marwel@users.noreply.hosted.weblate.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/postthis/postthis/"
 "de/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.0\n"
 
 # Translations for the postthis project
 # Copyright (C) 2023 Hendrik Bäcker
@@ -54,7 +54,7 @@ msgstr "Primär"
 
 #: postthis/templates/account/email.html:37
 msgid "Make Primary"
-msgstr ""
+msgstr "Primär machen"
 
 #: postthis/templates/account/email.html:38
 msgid "Re-send Verification"
@@ -125,6 +125,7 @@ msgstr "Anmelden"
 #: postthis/templates/account/login.html:17
 msgid "Please sign in with one of your existing third party accounts:"
 msgstr ""
+"Bitte melden Sie sich bei einem Ihrer vorhandenen Drittanbieter-Konten an:"
 
 #: postthis/templates/account/login.html:19
 #, python-format
@@ -132,6 +133,8 @@ msgid ""
 "Or, <a href=\"%(signup_url)s\">sign up</a> for a %(site_name)s account and "
 "sign in below:"
 msgstr ""
+"Oder, <a href=\"%(signup_url)s\">registrieren Sie sich</a> für ein "
+"%(site_name)s-Konto und melden Sie sich unten an:"
 
 #: postthis/templates/account/login.html:32
 msgid "or"
@@ -143,6 +146,8 @@ msgid ""
 "If you have not created an account yet, then please <a href=\"%(signup_url)s"
 "\">sign up</a> first."
 msgstr ""
+"Wenn Sie noch kein Konto erstellt haben, dann bitte <a href=\"%(signup_url)"
+"s\">registrieren Sie sich</a> zuerst."
 
 #: postthis/templates/account/login.html:55
 msgid "Forgot Password?"
@@ -180,6 +185,8 @@ msgid ""
 "Forgotten your password? Enter your e-mail address below, and we'll send you "
 "an e-mail allowing you to reset it."
 msgstr ""
+"Passwort vergessen? Geben Sie unten Ihre E-Mail-Adresse ein und wir senden "
+"Ihnen eine E-Mail, mit der Sie es zurücksetzen können."
 
 #: postthis/templates/account/password_reset.html:21
 msgid "Reset My Password"
@@ -188,16 +195,20 @@ msgstr "Mein Passwort zurücksetzen"
 #: postthis/templates/account/password_reset.html:24
 msgid "Please contact us if you have any trouble resetting your password."
 msgstr ""
+"Bitte kontaktieren Sie uns, wenn Sie Probleme haben, Ihr Passwort "
+"wiederherzustellen."
 
 #: postthis/templates/account/password_reset_done.html:15
 msgid ""
 "We have sent you an e-mail. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
+"Wir haben Ihnen eine E-Mail geschickt. Bitte kontaktieren Sie uns, wenn Sie "
+"es nicht innerhalb von wenigen Minuten erhalten."
 
 #: postthis/templates/account/password_reset_from_key.html:8
 msgid "Bad Token"
-msgstr ""
+msgstr "5 Mark in die Schlechte Wortspielkasse"
 
 #: postthis/templates/account/password_reset_from_key.html:12
 #, python-format
@@ -206,6 +217,9 @@ msgid ""
 "used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
 "a>."
 msgstr ""
+"Der Passwort-Reset-Link war ungültig, möglicherweise weil es bereits "
+"verwendet wurde. Bitte fordern Sie einen <a href=\"%(passwd_reset_url)s\""
+">neue Passwortreset</a> an."
 
 #: postthis/templates/account/password_reset_from_key.html:18
 msgid "change password"
@@ -224,18 +238,19 @@ msgstr "Passwort setzen"
 
 #: postthis/templates/account/signup.html:6
 msgid "Signup"
-msgstr "Anmeldung"
+msgstr "Registrierung"
 
 #: postthis/templates/account/signup.html:9
 #: postthis/templates/account/signup.html:19 postthis/templates/base.html:67
 msgid "Sign Up"
-msgstr "Anmelden"
+msgstr "Registrieren"
 
 #: postthis/templates/account/signup.html:11
 #, python-format
 msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 msgstr ""
+"Haben Sie schon ein Konto? Dann bitte <a href=\"%(login_url)s\">anmelden</a>."
 
 #: postthis/templates/account/signup_closed.html:5
 #: postthis/templates/account/signup_closed.html:8
@@ -259,6 +274,9 @@ msgid ""
 "finalize the signup process. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
+"Wir haben Ihnen eine E-Mail zur Überprüfung geschickt. Folgen Sie dem Link, "
+"um den Signup-Prozess abzuschließen. Bitte kontaktieren Sie uns, wenn Sie es "
+"nicht innerhalb von wenigen Minuten erhalten."
 
 #: postthis/templates/account/verified_email_required.html:12
 msgid ""
@@ -266,6 +284,9 @@ msgid ""
 "you are who you claim to be. For this purpose, we require that you\n"
 "verify ownership of your e-mail address. "
 msgstr ""
+"Dieser Teil der Seite benötigt eine Verifikation, dass\n"
+"Sie sind, wer Sie vorgeben zu sein. Aus diesem Grund, benötigen wir ihre\n"
+"Bestätigung über den Besitz ihrer E-mail Adresse. "
 
 #: postthis/templates/account/verified_email_required.html:16
 msgid ""
@@ -273,6 +294,11 @@ msgid ""
 "verification. Please click on the link inside this e-mail. Please\n"
 "contact us if you do not receive it within a few minutes."
 msgstr ""
+"Wir haben Ihnen eine E-Mail zur \n"
+"Überprüfung geschickt. Folgen Sie dem Link, um den Signup-Prozess "
+"abzuschließen. Bitte \n"
+"kontaktieren Sie uns, wenn Sie es nicht innerhalb von wenigen Minuten "
+"erhalten."
 
 #: postthis/templates/account/verified_email_required.html:20
 #, python-format
@@ -280,6 +306,8 @@ msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
 "mail address</a>."
 msgstr ""
+"<strong>Anmerkung:</strong> Sie können noch <a href=\"%(email_url)s\"> Ihre E"
+"-Mail-Adresse</a> ändern."
 
 #: postthis/templates/base.html:57
 msgid "My Profile"
