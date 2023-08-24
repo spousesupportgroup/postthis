@@ -2,6 +2,9 @@
 
 A CMS to post to different social media platforms.
 
+![Tests](https://github.com/spousesupportgroup/postthis/actions/workflows/ci.yml/badge.svg)
+![Coverage
+Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/andurin/0a3c8a2a341a5faf43c6cf3fe0bafbe1/raw/18c38360e8afc4a7894e4fb39cea21a6147b8111/spousesupportgroup-postthis-coverage.json)
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![Übersetzungsstatus](https://hosted.weblate.org/widget/postthis/postthis/svg-badge.svg)](https://hosted.weblate.org/engage/postthis/)
@@ -20,7 +23,7 @@ Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings
 
 - To create a **superuser account**, use this command:
 
-      $ python manage.py createsuperuser
+      python manage.py createsuperuser
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
@@ -28,19 +31,19 @@ For convenience, you can keep your normal user logged in on Chrome and your supe
 
 Running type checks with mypy:
 
-    $ mypy postthis
+    mypy postthis
 
 ### Test coverage
 
 To run the tests, check your test coverage, and generate an HTML coverage report:
 
-    $ coverage run -m pytest
-    $ coverage html
-    $ open htmlcov/index.html
+    coverage run -m pytest
+    coverage html
+    open htmlcov/index.html
 
 #### Running tests with pytest
 
-    $ pytest
+    pytest
 
 ### Live reloading and Sass CSS compilation
 
