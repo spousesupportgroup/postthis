@@ -7,11 +7,11 @@ env:
 
 on:
   pull_request:
-    branches: ['master', 'main']
+    branches: ['*']
     paths-ignore: ['docs/**']
 
   push:
-    branches: ['master', 'main', 'hendrik-*']
+    branches: ['*']
     paths-ignore: ['docs/**']
 
 concurrency:
@@ -49,6 +49,21 @@ jobs:
 
       - name: Run Django Tests
         run: docker compose -f local.yml run django pytest
+
+      - name: Store coverage for badge
+        if: ${{ runner.os == 'Linux' }}
+        run: docker compose -f local.yml run django python print-coverage.py >> $GITHUB_ENV
+
+      - name: Create coverage badge
+        if: ${{ github.ref == 'refs/heads/main' && github.repository == 'spousesupportgroup/postthis' && github.event_name == 'push' && runner.os == 'Linux' }}
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 0a3c8a2a341a5faf43c6cf3fe0bafbe1
+          filename: spousesupportgroup-postthis-coverage.json
+          label: Coverage
+          message: ${{ env.COVERAGE }}
+          color: ${{ env.COVERAGE_COLOR }}
 
       - name: Tear down the Stack
         run: docker compose -f local.yml down
