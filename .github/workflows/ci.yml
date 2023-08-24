@@ -55,7 +55,7 @@ jobs:
         run: docker compose -f local.yml run django python print-coverage.py >> $GITHUB_ENV
 
       - name: Create coverage badge
-        if: ${{ github.repository == 'spousesupportgroup/postthis' && github.event_name == 'push' && runner.os == 'Linux' }}
+        if: ${{ github.ref == 'refs/heads/main' && github.repository == 'spousesupportgroup/postthis' && github.event_name == 'push' && runner.os == 'Linux' }}
         uses: schneegans/dynamic-badges-action@v1.6.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
