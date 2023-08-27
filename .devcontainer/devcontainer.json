@@ -72,7 +72,8 @@
                 "ms-python.isort",
                 "ms-python.black-formatter",
                 // django
-                "batisteo.vscode-django"
+                "batisteo.vscode-django",
+                "Glavin001.unibeautify-vscode"
             ]
         }
     },
