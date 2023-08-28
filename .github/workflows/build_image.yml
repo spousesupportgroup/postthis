@@ -16,7 +16,6 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            spousesupportgroup/postthis
             ghcr.io/spousesupportgroup/postthis
           tags: |
             type=semver,pattern={{version}}
