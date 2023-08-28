@@ -142,8 +142,8 @@ msgid ""
 "If you have not created an account yet, then please <a href=\"%(signup_url)s"
 "\">sign up</a> first."
 msgstr ""
-"Wenn Sie noch kein Konto erstellt haben, dann bitte <a href=\"%(signup_url)"
-"s\">registrieren Sie sich</a> zuerst."
+"Wenn Sie noch kein Konto erstellt haben, dann bitte <a href=\"%(signup_url)s"
+"\">registrieren Sie sich</a> zuerst."
 
 #: postthis/templates/account/login.html:55
 msgid "Forgot Password?"
@@ -214,8 +214,8 @@ msgid ""
 "a>."
 msgstr ""
 "Der Passwort-Reset-Link war ungültig, möglicherweise weil es bereits "
-"verwendet wurde. Bitte fordern Sie einen <a href=\"%(passwd_reset_url)s\""
-">neue Passwortreset</a> an."
+"verwendet wurde. Bitte fordern Sie einen <a href=\"%(passwd_reset_url)s"
+"\">neue Passwortreset</a> an."
 
 #: postthis/templates/account/password_reset_from_key.html:18
 msgid "change password"
@@ -302,8 +302,8 @@ msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
 "mail address</a>."
 msgstr ""
-"<strong>Anmerkung:</strong> Sie können noch <a href=\"%(email_url)s\"> Ihre E"
-"-Mail-Adresse</a> ändern."
+"<strong>Anmerkung:</strong> Sie können noch <a href=\"%(email_url)s\"> Ihre "
+"E-Mail-Adresse</a> ändern."
 
 #: postthis/templates/base.html:57
 msgid "My Profile"

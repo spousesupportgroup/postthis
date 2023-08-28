@@ -106,8 +106,8 @@ msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
-"This e-mail confirmation link expired or is invalid. Please <a href=\""
-"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 
 #: postthis/templates/account/login.html:7
 #: postthis/templates/account/login.html:11
@@ -138,8 +138,8 @@ msgid ""
 "If you have not created an account yet, then please <a href=\"%(signup_url)s"
 "\">sign up</a> first."
 msgstr ""
-"If you have not created an account yet, then please <a href=\"%(signup_url)"
-"s\">sign up</a> first."
+"If you have not created an account yet, then please <a href=\"%(signup_url)s"
+"\">sign up</a> first."
 
 #: postthis/templates/account/login.html:55
 msgid "Forgot Password?"
@@ -208,8 +208,8 @@ msgid ""
 "a>."
 msgstr ""
 "The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
-"reset</a>."
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
 
 #: postthis/templates/account/password_reset_from_key.html:18
 msgid "change password"
