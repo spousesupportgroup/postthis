@@ -66,17 +66,17 @@ RUN chmod +x /start-flower
 # copy application code to WORKDIR
 COPY --chown=django:django . ${APP_HOME}
 
-# make django owner of the WORKDIR directory as well.
-RUN chown django:django ${APP_HOME}
-
-USER django
-
 # Install poetry and install dependencies
 RUN pip install poetry
 WORKDIR ${APP_HOME}
 
-RUN /home/django/.local/bin/poetry config virtualenvs.create false \
-  && /home/django/.local/bin/poetry install $(test "$BUILD_ENVIRONMENT" == production && echo "--without local --with production" || echo "--without production --with local") --no-interaction --no-ansi
+RUN /usr/local/bin/poetry config virtualenvs.create false \
+  && /usr/local/bin/poetry install $(test "$BUILD_ENVIRONMENT" == production && echo "--without local --with production" || echo "--without production --with local") --no-interaction --no-ansi
+
+# make django owner of the WORKDIR directory as well.
+RUN chown django:django ${APP_HOME}
+
+USER django
 
 RUN DATABASE_URL="" \
   CELERY_BROKER_URL="" \
