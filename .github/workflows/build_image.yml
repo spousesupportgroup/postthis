@@ -39,8 +39,5 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: |
-            spousesupportgroup/postthis:latest
-            spousesupportgroup/postthis:{{version}}
-            ghcr.io/spousesupportgroup/postthis:latest
-            ghcr.io/spousesupportgroup/postthis:{{version}}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
