@@ -74,9 +74,9 @@ USER django
 # Install poetry and install dependencies
 RUN pip install poetry
 WORKDIR ${APP_HOME}
-RUN which poetry
-RUN poetry config virtualenvs.create false \
-  && poetry install $(test "$BUILD_ENVIRONMENT" == production && echo "--without local --with production" || echo "--without production --with local") --no-interaction --no-ansi
+
+RUN /usr/local/bin/poetry config virtualenvs.create false \
+  && /usr/local/bin/poetry install $(test "$BUILD_ENVIRONMENT" == production && echo "--without local --with production" || echo "--without production --with local") --no-interaction --no-ansi
 
 RUN DATABASE_URL="" \
   CELERY_BROKER_URL="" \
