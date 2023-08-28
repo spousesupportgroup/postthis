@@ -1,7 +1,4 @@
 # Translations for the postthis project
-# Copyright (C) 2023 Hendrik Bäcker
-# Hendrik Bäcker <hendrik-bäcker@example.com>, 2023.
-#
 msgid ""
 msgstr ""
 

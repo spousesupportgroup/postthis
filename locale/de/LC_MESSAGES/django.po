@@ -15,10 +15,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.0\n"
 
-# Translations for the postthis project
-# Copyright (C) 2023 Hendrik Bäcker
-# Hendrik Bäcker <hendrik-bäcker@example.com>, 2023.
-#
 #: postthis/templates/account/account_inactive.html:5
 #: postthis/templates/account/account_inactive.html:8
 msgid "Account Inactive"
