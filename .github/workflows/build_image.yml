@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - "v*.*.*"
+  schedule:
+    - cron: "0 6 * * *"
 
 jobs:
   docker:
@@ -18,12 +20,15 @@ jobs:
           images: |
             ghcr.io/spousesupportgroup/postthis
           tags: |
+            type=schedule
+            type=ref,event=branch
+            type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
             type=sha
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+      # - name: Set up QEMU
+      #   uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Login to GitHub Container Registry
