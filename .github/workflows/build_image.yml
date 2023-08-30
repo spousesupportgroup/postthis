@@ -1,3 +1,4 @@
+---
 name: build_image
 
 on:
@@ -20,8 +21,7 @@ jobs:
           images: |
             ghcr.io/spousesupportgroup/postthis
           tags: |
-            type=schedule,pattern=nightly
-            type=schedule,pattern={{date 'YYYYMMDD' tz='Europe/Berlin'}}
+            type=schedule,pattern=nightly-{{date 'YYYYMMDD' tz='Europe/Berlin'}}
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
