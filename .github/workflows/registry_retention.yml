@@ -27,7 +27,7 @@ jobs:
           image-names: "ghcr.io/spousesupportgroup/postthis"
           cut-off: One week ago UTC
           keep-at-least: 10
-          filter-tags: "main"
+          filter-tags: "nightly*"
           account-type: org
           org-name: spousesupportgroup
           token: ${{ github.token }}
