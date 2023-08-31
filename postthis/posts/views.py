@@ -1,21 +1,26 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render, get_object_or_404
-from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
+from django.urls import reverse, reverse_lazy
 from django.utils import timezone
-from django.views.generic import DetailView, ListView, UpdateView, UpdateView
+from django.utils.translation import gettext_lazy as _
+from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
 from .models import Post
-from .forms import PostForm
 
 
 class PostList(LoginRequiredMixin, ListView):
     model = Post
-    template_name = "posts/post-list.html"
+    template_name = "posts/post_list.html"
     context_object_name = "post_list"
 
     def get_queryset(self):
         return Post.objects.filter(author=self.request.user)
+
+    def get_context_data(self, *args, **kwargs):
+        self.object_list = super().get_queryset()
+        context = super().get_context_data(*args, **kwargs)
+        return context
 
 
 post_list_view = PostList.as_view()
@@ -30,10 +35,10 @@ class PostDetail(LoginRequiredMixin, DetailView):
 post_detail_view = PostDetail.as_view()
 
 
-class PostCreateView(LoginRequiredMixin, CreateView):
+class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Post
     fields = ["title", "slug", "status", "content"]
-
+    success_message = _("Information successfully updated")
     template_name = "posts/post-form.html"
 
     def form_valid(self, form):
@@ -43,28 +48,28 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
     def get_success_url(self) -> str:
         slug = self.object.slug
-        return reverse_lazy("posts:post-detail", kwargs={"slug": slug})
+        return reverse_lazy("posts:post_detail", kwargs={"slug": slug})
 
 
 post_create_view = PostCreateView.as_view()
 
 
-class PostUpdateView(LoginRequiredMixin, UpdateView):
+class PostUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Post
     fields = "__all__"
+    success_message = _("Information successfully updated")
     template_name = "posts/post-update.html"
 
-    def get_success_url(self) -> str:
-        slug = self.kwargs[self.slug_url_kwarg]
-        return reverse_lazy("posts:post-detail", kwargs={"slug": slug})
+    def get_success_url(self, **kwargs) -> str:
+        return reverse("posts:post_detail", kwargs={"slug": self.request.POST.get("slug")})
 
 
 post_update_view = PostUpdateView.as_view()
 
 
-class PostDeleteView(LoginRequiredMixin, UpdateView):
+class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
     success_url = reverse_lazy("allposts")
 
 
-post_update_view = PostUpdateView.as_view()
+post_delete_view = PostDeleteView.as_view()
