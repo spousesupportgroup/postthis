@@ -17,11 +17,6 @@ class PostList(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Post.objects.filter(author=self.request.user)
 
-    def get_context_data(self, *args, **kwargs):
-        self.object_list = super().get_queryset()
-        context = super().get_context_data(*args, **kwargs)
-        return context
-
 
 post_list_view = PostList.as_view()
 
