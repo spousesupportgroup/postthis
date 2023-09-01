@@ -12,7 +12,8 @@
             ],
             "django": true,
             "justMyCode": true,
-            "envFile": "${workspaceFolder}/.envs/.local/.django"
+            "envFile": "${workspaceFolder}/.envs/.local/.django",
+            "jinja": true
         },
         {
             "name": "Python: Debug Tests",
