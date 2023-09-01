@@ -10,24 +10,9 @@ jobs:
     name: Delete old unused container images
     runs-on: ubuntu-latest
     steps:
-      - name: Delete old released images
-        uses: snok/container-retention-policy@v2
-        with:
-          image-names: "ghcr.io/spousesupportgroup/postthis"
-          cut-off: One month ago UTC
-          keep-at-least: 10
-          filter-tags: "v*.*.*"
-          account-type: org
-          org-name: spousesupportgroup
-          skip-tags: latest
-          token: ${{ github.token }}
-      - name: Delete old pre-release images
-        uses: snok/container-retention-policy@v2
-        with:
-          image-names: "ghcr.io/spousesupportgroup/postthis"
-          cut-off: One week ago UTC
-          keep-at-least: 10
-          filter-tags: "nightly*"
-          account-type: org
-          org-name: spousesupportgroup
-          token: ${{ github.token }}
+      - uses: actions/delete-package-versions@v4
+        with: 
+          package-name: 'postthis'
+          package-type: 'container'
+          min-versions-to-keep: 10
+          delete-only-untagged-versions: 'true'
