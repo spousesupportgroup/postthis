@@ -42,6 +42,15 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
 
+# copy application code to WORKDIR
+COPY . ${APP_HOME}
+
+# Install poetry and install dependencies
+RUN pip install poetry
+WORKDIR ${APP_HOME}
+RUN poetry config virtualenvs.create false \
+  && poetry install $(test "$BUILD_ENVIRONMENT" == production && echo "--without local --with production" || echo "--without production --with local") --no-interaction --no-ansi
+
 COPY ./compose/local/docs/start /start-docs
 RUN sed -i 's/\r$//g' /start-docs
 RUN chmod +x /start-docs
