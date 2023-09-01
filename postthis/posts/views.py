@@ -55,7 +55,7 @@ class PostUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     success_message = _("Information successfully updated")
     template_name = "posts/post-update.html"
 
-    def get_success_url(self, **kwargs) -> str:
+    def get_success_url(self) -> str:
         return reverse("posts:post_detail", kwargs={"slug": self.request.POST.get("slug")})
 
 
@@ -64,7 +64,7 @@ post_update_view = PostUpdateView.as_view()
 
 class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
-    success_url = reverse_lazy("allposts")
+    success_url = "/posts/"
 
 
 post_delete_view = PostDeleteView.as_view()

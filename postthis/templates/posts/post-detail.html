@@ -16,20 +16,29 @@
         <div class="xl:w-1/4 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg">
             <p class="leading-relaxed text-base">
-              <b>{% translate 'Title' %}: </b>{{ post.title }}
+              <b>{% translate 'Title' %}:
+              </b>{{ post.title }}
               <br />
-              <b>{% translate 'Slug' %}: </b>{{ post.slug }}
+              <b>{% translate 'Slug' %}:
+              </b>{{ post.slug }}
               <br />
-              <b>{% translate 'Author' %}: </b>{{ post.author }}
+              <b>{% translate 'Author' %}:
+              </b>{{ post.author }}
               <br />
-              <b>{% translate 'Updated' %}: </b>{{ post.updated_on }}
+              <b>{% translate 'Updated' %}:
+              </b>{{ post.updated_on }}
               <br />
-              <b>{% translate 'Status' %}: </b>{{ post.get_status_display }}
+              <b>{% translate 'Status' %}:
+              </b>{{ post.get_status_display }}
               <br />
-              <b>{% translate 'Content' %}: </b>
+              <b>{% translate 'Content' %}:
+              </b>
               <br />
               {{ post.content }}
               <br />
+            </p>
+            <p class="leading-relaxed text-base">
+              <a href="{% url 'posts:post_delete' post.slug %}">{% translate 'Delete Post' %}</a>
             </p>
           </div>
         </div>

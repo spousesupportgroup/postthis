@@ -12,23 +12,25 @@ from django.utils.translation import gettext_lazy as _
 from postthis.posts.forms import PostForm
 from postthis.posts.models import Post, User
 from postthis.posts.tests.factories import UserFactory
-from postthis.posts.views import PostCreateView, PostUpdateView, post_detail_view, post_list_view
+from postthis.posts.views import PostCreateView, PostList, PostUpdateView, post_delete_view, post_detail_view
 
 pytestmark = pytest.mark.django_db
 
 
 class TestPostCommon:
     def test_authenticated_get_post_list(self, user: User, rf: RequestFactory):
+        view = PostList
         request = rf.get(reverse("posts:post_list"))
         request.user = UserFactory()
-        response = post_list_view(request, username=user.username)
+        response = view.as_view()(request, username=user.username)
 
         assert response.status_code == 200
 
     def test_not_authenticated_get_post_list(self, user: User, rf: RequestFactory):
+        view = PostList
         request = rf.get(reverse("posts:post_list"))
         request.user = AnonymousUser()
-        response = post_list_view(request, username=user.username)
+        response = view.as_view()(request, username=user.username)
         login_url = reverse(settings.LOGIN_URL)
 
         assert isinstance(response, HttpResponseRedirect)
@@ -145,3 +147,31 @@ class TestPostUpdateView:
 
         messages_sent = [m.message for m in messages.get_messages(request)]
         assert messages_sent == [_("Information successfully updated")]
+
+
+class TestPostDeleteView:
+    def test_post_delete_get_request(self, user: User, rf: RequestFactory, client: Client):
+        post = Post.objects.create(
+            title="The Catcher in the Rye", slug="TheCatcherInTheRye", author=user, content="Sample-Content", status=0
+        )
+        request = rf.get(reverse("posts:post_delete", kwargs={"slug": post.slug}))
+        request.user = user
+
+        response = post_delete_view(request, slug=post.slug)
+
+        assert response.status_code == 200
+        assert "posts/post_confirm_delete.html" in response.template_name
+        assert "Are you sure you want to delete" in response.rendered_content
+
+    def test_post_delete_post_request(self, user: User, rf: RequestFactory, client: Client):
+        post = Post.objects.create(
+            title="The Catcher in the Rye", slug="TheCatcherInTheRye", author=user, content="Sample-Content", status=0
+        )
+        request = rf.post(reverse("posts:post_delete", kwargs={"slug": post.slug}))
+        request.user = user
+
+        response = post_delete_view(request, slug=post.slug)
+
+        assert response.status_code == 302
+        assert response.url == "/posts/"
+        assert len(Post.objects.filter(slug=post.slug)) == 0
