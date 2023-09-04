@@ -30,7 +30,7 @@ class TestPostCommon:
         view = PostList
         request = rf.get(reverse("posts:post_list"))
         request.user = AnonymousUser()
-        response = view.as_view()(request, username=user.username)
+        response = view.as_view()(request)
         login_url = reverse(settings.LOGIN_URL)
 
         assert isinstance(response, HttpResponseRedirect)
