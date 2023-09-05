@@ -35,7 +35,7 @@ ipdb = "^0.13.13"
 psycopg = {version = "3.1.10", extras = ["c"]}
 watchfiles = "^0.20.0"
 mypy = "^1.4.1"
-django-stubs = {version = "4.2.3", extras = ["compatible-mypy"]}
+django-stubs = {version = "4.2.4", extras = ["compatible-mypy"]}
 pytest = "^7.4.0"
 pytest-sugar = "^0.9.7"
 sphinx = "^7.2.5"
