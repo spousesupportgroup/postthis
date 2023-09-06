@@ -24,6 +24,8 @@ updates:
         update-types:
           - 'version-update:semver-major'
           - 'version-update:semver-minor'
+    commit-message:
+      prefix: "fix(docker): "
 
   - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/local/docs` directory
@@ -37,6 +39,8 @@ updates:
         update-types:
           - 'version-update:semver-major'
           - 'version-update:semver-minor'
+    commit-message:
+      prefix: "fix(docker): "
 
   - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/local/node` directory
@@ -44,6 +48,8 @@ updates:
     # Every weekday
     schedule:
       interval: 'daily'
+    commit-message:
+      prefix: "fix(docker): "
 
   - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/production/aws` directory
@@ -51,6 +57,8 @@ updates:
     # Every weekday
     schedule:
       interval: 'daily'
+    commit-message:
+      prefix: "fix(docker): "
 
   - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/production/django` directory
@@ -64,6 +72,8 @@ updates:
         update-types:
           - 'version-update:semver-major'
           - 'version-update:semver-minor'
+    commit-message:
+      prefix: "fix(docker): "
 
   - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/production/postgres` directory
@@ -71,6 +81,8 @@ updates:
     # Every weekday
     schedule:
       interval: 'daily'
+    commit-message:
+      prefix: "fix(docker): "
 
   - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/production/traefik` directory
@@ -78,6 +90,8 @@ updates:
     # Every weekday
     schedule:
       interval: 'daily'
+    commit-message:
+      prefix: "fix(docker): "
 
   # Enable version updates for Python/Pip - Production
   - package-ecosystem: 'pip'
@@ -87,3 +101,5 @@ updates:
     # Every weekday
     schedule:
       interval: 'daily'
+    commit-message:
+      prefix: "fix(pip): "
