@@ -38,7 +38,7 @@ mypy = "^1.5.1"
 django-stubs = {version = "4.2.4", extras = ["compatible-mypy"]}
 pytest = "^7.4.2"
 pytest-sugar = "^0.9.7"
-sphinx = "^7.2.5"
+sphinx = "^7.2.6"
 sphinx-autobuild = "^2021.3.14"
 flake8="^6.1.0"
 flake8-isort="^6.0.0"
