@@ -9,7 +9,9 @@ Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/an
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![Übersetzungsstatus](https://hosted.weblate.org/widget/postthis/postthis/svg-badge.svg)](https://hosted.weblate.org/engage/postthis/)
 [![Documentation Status](https://readthedocs.org/projects/postthis/badge/?version=latest)](https://postthis.readthedocs.io/en/latest/?badge=latest)
-[![Maintainability](https://api.codeclimate.com/v1/badges/ebf30ed9027667d54e74/maintainability)](https://codeclimate.com/github/spousesupportgroup/postthis/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0e6d7b8c0672d1bbdc56/maintainability)](https://codeclimate.com/github/spousesupportgroup/postthis/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0e6d7b8c0672d1bbdc56/test_coverage)](https://codeclimate.com/github/spousesupportgroup/postthis/test_coverage)
+
 
 License: GPLv3
 
