@@ -16,6 +16,6 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
-          release-type: simple
+          release-type: python
           package-name: release-please-action
           token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
