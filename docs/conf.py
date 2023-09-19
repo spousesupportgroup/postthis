@@ -28,8 +28,8 @@ django.setup()
 # -- Project information -----------------------------------------------------
 
 project = "postthis"
-copyright = """2023, Hendrik Bäcker"""
-author = "Hendrik Bäcker"
+copyright = """2023, Spouse Support Group"""
+author = "Spouse Support Group"
 
 
 # -- General configuration ---------------------------------------------------
