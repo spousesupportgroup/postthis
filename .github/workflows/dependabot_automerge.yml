@@ -20,7 +20,7 @@ jobs:
             github-token: "${{ secrets.GITHUB_TOKEN }}"
         - name: Approve and merge
           id: auto-merge
-          if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
+          if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'}}
           run: |
             gh pr edit "$PR_URL" --add-label "auto-merged"
             gh pr review --approve "$PR_URL"
