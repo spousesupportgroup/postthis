@@ -30,7 +30,7 @@ LANGUAGE_CODE = "en-us"
 LANGUAGES = [
     ("en", _("English")),
     ("de", _("German")),
-    ('pt-br', _('Português')),
+    ("pt-br", _("Português")),
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
