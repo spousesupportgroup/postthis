@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-20 02:50+0000\n"
-"PO-Revision-Date: 2023-08-24 16:48+0000\n"
+"PO-Revision-Date: 2023-09-20 02:54+0000\n"
 "Last-Translator: Marko Weltzer <Marwel@users.noreply.hosted.weblate.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/postthis/postthis/"
 "de/>\n"
@@ -13,19 +13,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: config/settings/base.py:32
 msgid "English"
-msgstr ""
+msgstr "Englisch"
 
 #: config/settings/base.py:33
 msgid "German"
-msgstr ""
+msgstr "Deutsch"
 
 #: config/settings/base.py:34
 msgid "Português"
-msgstr ""
+msgstr "Portugiesich"
 
 #: postthis/templates/account/account_inactive.html:6
 #: postthis/templates/account/account_inactive.html:9
