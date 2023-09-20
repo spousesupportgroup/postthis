@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-20 02:39+0000\n"
+"POT-Creation-Date: 2023-09-20 02:50+0000\n"
 "PO-Revision-Date: 2023-08-24 16:48+0000\n"
 "Last-Translator: Marko Weltzer <Marwel@users.noreply.hosted.weblate.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/postthis/postthis/"
@@ -15,42 +15,68 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.0\n"
 
+#: config/settings/base.py:32
+msgid "English"
+msgstr ""
+
+#: config/settings/base.py:33
+msgid "German"
+msgstr ""
+
+#: config/settings/base.py:34
+msgid "Português"
+msgstr ""
+
+#: postthis/templates/account/account_inactive.html:6
+#: postthis/templates/account/account_inactive.html:9
 msgid "Account Inactive"
 msgstr "Konto inaktiv"
 
+#: postthis/templates/account/account_inactive.html:10
 msgid "This account is inactive."
 msgstr "Dieses Konto ist inaktiv."
 
+#: postthis/templates/account/email.html:7
 msgid "Account"
 msgstr "Konto"
 
+#: postthis/templates/account/email.html:10
 msgid "E-mail Addresses"
 msgstr "E-mail Adressen"
 
+#: postthis/templates/account/email.html:12
 msgid "The following e-mail addresses are associated with your account:"
 msgstr "Die folgenden E-mail Adressen sind mit Ihrem Konto verknüft:"
 
+#: postthis/templates/account/email.html:27
 msgid "Verified"
 msgstr "Bestätigt"
 
+#: postthis/templates/account/email.html:29
 msgid "Unverified"
 msgstr "Unbestätigt"
 
+#: postthis/templates/account/email.html:32
 msgid "Primary"
 msgstr "Primär"
 
+#: postthis/templates/account/email.html:40
 msgid "Make Primary"
 msgstr "Primär machen"
 
+#: postthis/templates/account/email.html:43
 msgid "Re-send Verification"
 msgstr "Verifikation erneut senden"
 
+#: postthis/templates/account/email.html:46
 msgid "Remove"
 msgstr "Entfernen"
 
+#: postthis/templates/account/email.html:52
 msgid "Warning:"
 msgstr "Warnung:"
 
+#: postthis/templates/account/email.html:52
 msgid ""
 "You currently do not have any e-mail address set up. You should really add "
 "an e-mail address so you can receive notifications, reset your password, etc."
@@ -59,18 +85,24 @@ msgstr ""
 "Addresse hinzufügen, sodass Sie Benachrichtigungen erhalten können, ihr "
 "Passwort zurücksetzen könnnen, etc."
 
+#: postthis/templates/account/email.html:55
 msgid "Add E-mail Address"
 msgstr "E-mail Adresse hinzufügen"
 
+#: postthis/templates/account/email.html:59
 msgid "Add E-mail"
 msgstr "E-mail hinzufügen"
 
+#: postthis/templates/account/email.html:66
 msgid "Do you really want to remove the selected e-mail address?"
 msgstr "Wollen Sie wirklich die ausgewählte E-mail Adresse entfernen?"
 
+#: postthis/templates/account/email_confirm.html:7
+#: postthis/templates/account/email_confirm.html:10
 msgid "Confirm E-mail Address"
 msgstr "Bestätige E-mail Adresse"
 
+#: postthis/templates/account/email_confirm.html:14
 #, python-format
 msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
@@ -79,9 +111,11 @@ msgstr ""
 "Bitte bestätigen Sie, dass <a href=\"mailto:%(email)s\">%(email)s</a> eine E-"
 "mail Adresse für den Benutzer %(user_display)s ist."
 
+#: postthis/templates/account/email_confirm.html:19
 msgid "Confirm"
 msgstr "Bestätigen"
 
+#: postthis/templates/account/email_confirm.html:24
 #, python-format
 msgid ""
 "This e-mail confirmation link expired or is invalid. Please <a href="
@@ -90,13 +124,18 @@ msgstr ""
 "Dieser E-mail Bestätigunslink ist abgelaufen oder ungültig. Bitte <a href="
 "\"%(email_url)s\">fragen Sie eine neue E-mail Bestätigungsanfrage an</a>."
 
+#: postthis/templates/account/login.html:8
+#: postthis/templates/account/login.html:11
+#: postthis/templates/account/login.html:50 postthis/templates/base.html:85
 msgid "Sign In"
 msgstr "Anmelden"
 
+#: postthis/templates/account/login.html:15
 msgid "Please sign in with one of your existing third party accounts:"
 msgstr ""
 "Bitte melden Sie sich bei einem Ihrer vorhandenen Drittanbieter-Konten an:"
 
+#: postthis/templates/account/login.html:17
 #, python-format
 msgid ""
 "Or, <a href=\"%(signup_url)s\">sign up</a> for a %(site_name)s account and "
@@ -105,9 +144,11 @@ msgstr ""
 "Oder, <a href=\"%(signup_url)s\">registrieren Sie sich</a> für ein "
 "%(site_name)s-Konto und melden Sie sich unten an:"
 
+#: postthis/templates/account/login.html:27
 msgid "or"
 msgstr "oder"
 
+#: postthis/templates/account/login.html:33
 #, python-format
 msgid ""
 "If you have not created an account yet, then please <a href=\"%(signup_url)s"
@@ -116,21 +157,38 @@ msgstr ""
 "Wenn Sie noch kein Konto erstellt haben, dann bitte <a href=\"%(signup_url)s"
 "\">registrieren Sie sich</a> zuerst."
 
+#: postthis/templates/account/login.html:49
 msgid "Forgot Password?"
 msgstr "Passwort vergessen?"
 
+#: postthis/templates/account/logout.html:6
+#: postthis/templates/account/logout.html:9
+#: postthis/templates/account/logout.html:18 postthis/templates/base.html:74
 msgid "Sign Out"
 msgstr "Abmelden"
 
+#: postthis/templates/account/logout.html:10
 msgid "Are you sure you want to sign out?"
 msgstr "Sind Sie sicher, dass Sie sich abmelden möchten?"
 
+#: postthis/templates/account/password_change.html:7
+#: postthis/templates/account/password_change.html:10
+#: postthis/templates/account/password_change.html:16
+#: postthis/templates/account/password_reset_from_key.html:7
+#: postthis/templates/account/password_reset_from_key.html:14
+#: postthis/templates/account/password_reset_from_key_done.html:6
+#: postthis/templates/account/password_reset_from_key_done.html:9
 msgid "Change Password"
 msgstr "Passwort ändern"
 
+#: postthis/templates/account/password_reset.html:8
+#: postthis/templates/account/password_reset.html:11
+#: postthis/templates/account/password_reset_done.html:7
+#: postthis/templates/account/password_reset_done.html:10
 msgid "Password Reset"
 msgstr "Passwort zurücksetzen"
 
+#: postthis/templates/account/password_reset.html:16
 msgid ""
 "Forgotten your password? Enter your e-mail address below, and we'll send you "
 "an e-mail allowing you to reset it."
@@ -138,14 +196,17 @@ msgstr ""
 "Passwort vergessen? Geben Sie unten Ihre E-Mail-Adresse ein und wir senden "
 "Ihnen eine E-Mail, mit der Sie es zurücksetzen können."
 
+#: postthis/templates/account/password_reset.html:25
 msgid "Reset My Password"
 msgstr "Mein Passwort zurücksetzen"
 
+#: postthis/templates/account/password_reset.html:27
 msgid "Please contact us if you have any trouble resetting your password."
 msgstr ""
 "Bitte kontaktieren Sie uns, wenn Sie Probleme haben, Ihr Passwort "
 "wiederherzustellen."
 
+#: postthis/templates/account/password_reset_done.html:15
 msgid ""
 "We have sent you an e-mail. Please contact us if you do not receive it "
 "within a few minutes."
@@ -153,9 +214,11 @@ msgstr ""
 "Wir haben Ihnen eine E-Mail geschickt. Bitte kontaktieren Sie uns, wenn Sie "
 "es nicht innerhalb von wenigen Minuten erhalten."
 
+#: postthis/templates/account/password_reset_from_key.html:12
 msgid "Bad Token"
 msgstr "5 Mark in die Schlechte Wortspielkasse"
 
+#: postthis/templates/account/password_reset_from_key.html:20
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -166,36 +229,54 @@ msgstr ""
 "verwendet wurde. Bitte fordern Sie einen <a href=\"%(passwd_reset_url)s"
 "\">neue Passwortreset</a> an."
 
+#: postthis/templates/account/password_reset_from_key.html:30
 msgid "change password"
 msgstr "Passwort ändern"
 
+#: postthis/templates/account/password_reset_from_key.html:33
+#: postthis/templates/account/password_reset_from_key_done.html:10
 msgid "Your password is now changed."
 msgstr "Ihr Passwort wurde geändert."
 
+#: postthis/templates/account/password_set.html:7
+#: postthis/templates/account/password_set.html:10
+#: postthis/templates/account/password_set.html:19
 msgid "Set Password"
 msgstr "Passwort setzen"
 
+#: postthis/templates/account/signup.html:7
 msgid "Signup"
 msgstr "Registrierung"
 
+#: postthis/templates/account/signup.html:10
+#: postthis/templates/account/signup.html:25 postthis/templates/base.html:80
 msgid "Sign Up"
 msgstr "Registrieren"
 
+#: postthis/templates/account/signup.html:12
 #, python-format
 msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 msgstr ""
 "Haben Sie schon ein Konto? Dann bitte <a href=\"%(login_url)s\">anmelden</a>."
 
+#: postthis/templates/account/signup_closed.html:6
+#: postthis/templates/account/signup_closed.html:9
 msgid "Sign Up Closed"
 msgstr "Anmeldung geschlossen"
 
+#: postthis/templates/account/signup_closed.html:10
 msgid "We are sorry, but the sign up is currently closed."
 msgstr "Tut uns leid, aber die Anmeldung ist derzeit geschlossen."
 
+#: postthis/templates/account/verification_sent.html:6
+#: postthis/templates/account/verification_sent.html:9
+#: postthis/templates/account/verified_email_required.html:6
+#: postthis/templates/account/verified_email_required.html:9
 msgid "Verify Your E-mail Address"
 msgstr "Bestätigen Sie ihre E-mail Adresse"
 
+#: postthis/templates/account/verification_sent.html:11
 msgid ""
 "We have sent an e-mail to you for verification. Follow the link provided to "
 "finalize the signup process. Please contact us if you do not receive it "
@@ -205,6 +286,7 @@ msgstr ""
 "um den Signup-Prozess abzuschließen. Bitte kontaktieren Sie uns, wenn Sie es "
 "nicht innerhalb von wenigen Minuten erhalten."
 
+#: postthis/templates/account/verified_email_required.html:12
 msgid ""
 "This part of the site requires us to verify that\n"
 "you are who you claim to be. For this purpose, we require that you\n"
@@ -214,6 +296,7 @@ msgstr ""
 "Sie sind, wer Sie vorgeben zu sein. Aus diesem Grund, benötigen wir ihre\n"
 "Bestätigung über den Besitz ihrer E-mail Adresse. "
 
+#: postthis/templates/account/verified_email_required.html:17
 msgid ""
 "We have sent an e-mail to you for\n"
 "verification. Please click on the link inside this e-mail. Please\n"
@@ -225,6 +308,7 @@ msgstr ""
 "kontaktieren Sie uns, wenn Sie es nicht innerhalb von wenigen Minuten "
 "erhalten."
 
+#: postthis/templates/account/verified_email_required.html:22
 #, python-format
 msgid ""
 "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
@@ -233,26 +317,34 @@ msgstr ""
 "<strong>Anmerkung:</strong> Sie können noch <a href=\"%(email_url)s\"> Ihre "
 "E-Mail-Adresse</a> ändern."
 
+#: postthis/templates/base.html:70
 msgid "My Profile"
 msgstr "Mein Profil"
 
+#: postthis/users/admin.py:23
 msgid "Personal info"
 msgstr "Persönliche Infos"
 
+#: postthis/users/admin.py:25
 msgid "Permissions"
 msgstr "Berechtigungen"
 
+#: postthis/users/admin.py:36
 msgid "Important dates"
 msgstr "Wichtige Daten"
 
+#: postthis/users/apps.py:7
 msgid "Users"
 msgstr "Benutzer"
 
+#: postthis/users/forms.py:24 postthis/users/tests/test_forms.py:36
 msgid "This username has already been taken."
 msgstr "Dieser Benutzername ist schon vergeben."
 
+#: postthis/users/models.py:15
 msgid "Name of User"
 msgstr "Name des Benutzers"
 
+#: postthis/users/tests/test_views.py:67 postthis/users/views.py:23
 msgid "Information successfully updated"
 msgstr "Information erfolgreich geändert"

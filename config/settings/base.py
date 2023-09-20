@@ -27,11 +27,11 @@ TIME_ZONE = "UTC"
 # https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = "en-us"
 # https://docs.djangoproject.com/en/dev/ref/settings/#languages
-# from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 LANGUAGES = [
-    ('en', _('English')),
-    ('de', _('Deutsch')),
-#     ('pt-br', _('Português')),
+    ("en", _("English")),
+    ("de", _("German")),
+    ('pt-br', _('Português')),
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
