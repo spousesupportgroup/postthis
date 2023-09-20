@@ -2,8 +2,9 @@
 Base settings to build other settings files upon.
 """
 from pathlib import Path
-from django.utils.translation import gettext_lazy as _
+
 import environ
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # postthis/
