@@ -1,18 +1,18 @@
 ---
 name: CI
 
-# Enable Buildkit and let compose use it to speed up image building
 env:
   DOCKER_BUILDKIT: 1
   COMPOSE_DOCKER_CLI_BUILD: 1
 
 on:
   pull_request:
-    branches: ['*']
+    branches: ['main']
+    types: [ opened, synchronize, reopened ]
     paths-ignore: ['docs/**']
 
   push:
-    branches: ['*']
+    branches: ['main']
     paths-ignore: ['docs/**']
 
 concurrency:
@@ -21,9 +21,6 @@ concurrency:
 
 jobs:
   linter:
-    if: github.event_name != 'pull_request' ||
-      github.event.pull_request.head.repo.full_name !=
-      github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code Repository
@@ -33,16 +30,12 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      # Consider using pre-commit.ci for open source project
+
       - name: Run pre-commit
         uses: pre-commit/action@v3.0.0
 
-  # With no caching at all the entire ci process takes 4m 30s to complete!
   pytest:
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request' ||
-      github.event.pull_request.head.repo.full_name !=
-      github.event.pull_request.base.repo.full_name
     steps:
       - name: Checkout Code Repository
         uses: actions/checkout@v4
