@@ -10,7 +10,7 @@ repository = "https://github.com/spousesupportgroup/postthis/"
 [tool.poetry.dependencies]
 python = "^3.9"
 python-slugify = "^8.0.1"
-Pillow= "^10.0.1"
+Pillow= "^10.1.0"
 argon2-cffi= "^23.1.0"
 whitenoise="^6.6.0"
 redis="^5.0.1"
