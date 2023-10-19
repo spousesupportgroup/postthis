@@ -55,7 +55,7 @@ jobs:
 
       - name: Create coverage badge
         if: ${{ github.ref == 'refs/heads/main' && github.repository == 'spousesupportgroup/postthis' && github.event_name == 'push' && runner.os == 'Linux' }}
-        uses: schneegans/dynamic-badges-action@v1.6.0
+        uses: schneegans/dynamic-badges-action@v1.7.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: 0a3c8a2a341a5faf43c6cf3fe0bafbe1
