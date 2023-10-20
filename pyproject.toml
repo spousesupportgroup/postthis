@@ -42,7 +42,7 @@ werkzeug = {version = "3.0.0", extras = ["watchdog"]}
 ipdb = "^0.13.13"
 psycopg = {version = "3.1.12", extras = ["c"]}
 watchfiles = "^0.21.0"
-mypy = "^1.5.1"
+mypy = "^1.6.1"
 django-stubs = {version = "4.2.5", extras = ["compatible-mypy"]}
 pytest = "^7.4.2"
 pytest-sugar = "^0.9.7"
