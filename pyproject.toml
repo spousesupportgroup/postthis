@@ -38,13 +38,13 @@ docs = ["sphinx","sphinx-autobuild","sphinx_rtd_theme", "django-debug-toolbar", 
 optional = true
 
 [tool.poetry.group.local.dependencies]
-werkzeug = {version = "3.0.0", extras = ["watchdog"]}
+werkzeug = {version = "3.0.1", extras = ["watchdog"]}
 ipdb = "^0.13.13"
 psycopg = {version = "3.1.12", extras = ["c"]}
 watchfiles = "^0.21.0"
 mypy = "^1.6.1"
-django-stubs = {version = "4.2.5", extras = ["compatible-mypy"]}
-pytest = "^7.4.2"
+django-stubs = {version = "4.2.6", extras = ["compatible-mypy"]}
+pytest = "^7.4.3"
 pytest-sugar = "^0.9.7"
 sphinx = "^7.2.6"
 sphinx-autobuild = "^2021.3.14"
@@ -52,10 +52,10 @@ sphinx_rtd_theme = "^1.3.0"
 flake8="^6.1.0"
 flake8-isort="^6.1.0"
 coverage="^7.3.2"
-black="^23.10.0"
+black="^23.10.1"
 djlint="^1.34.0"
 pylint = "^2.17.7"
-pylint-django="^2.5.4"
+pylint-django="^2.5.5"
 pylint-celery="^0.3"
 pre-commit="^3.5.0"
 factory-boy = "^3.3.0"
@@ -71,7 +71,7 @@ optional = true
 [tool.poetry.group.production.dependencies]
 gunicorn = "^21.2.0"
 psycopg = {version = "3.1.12", extras = ["c"]}
-django-anymail = "10.1"
+django-anymail = "10.2"
 
 [build-system]
 requires = ["poetry-core"]
