@@ -2022,23 +2022,23 @@ wcwidth = "*"
 
 [[package]]
 name = "psycopg"
-version = "3.1.13"
+version = "3.1.14"
 description = "PostgreSQL database adapter for Python"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "psycopg-3.1.13-py3-none-any.whl", hash = "sha256:1253010894cfb64e2da4556d4eff5f05e45cafee641f64e02453be849c8f7687"},
-    {file = "psycopg-3.1.13.tar.gz", hash = "sha256:e6d047ce16950651d6e26c7c19ca57cc42e1d4841b58729f691244baeee46e30"},
+    {file = "psycopg-3.1.14-py3-none-any.whl", hash = "sha256:f5bce37d357578b230ede15fb461e2c601122986f6dd590e94283aaca8958b14"},
+    {file = "psycopg-3.1.14.tar.gz", hash = "sha256:7a63249f52e9c312d2d3978df5f170d21a0defd3a0c950d7859d226b7cfbfad5"},
 ]
 
 [package.dependencies]
-psycopg-c = {version = "3.1.13", optional = true, markers = "extra == \"c\""}
+psycopg-c = {version = "3.1.14", optional = true, markers = "implementation_name != \"pypy\" and extra == \"c\""}
 typing-extensions = ">=4.1"
 tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 
 [package.extras]
-binary = ["psycopg-binary (==3.1.13)"]
-c = ["psycopg-c (==3.1.13)"]
+binary = ["psycopg-binary (==3.1.14)"]
+c = ["psycopg-c (==3.1.14)"]
 dev = ["black (>=23.1.0)", "dnspython (>=2.1)", "flake8 (>=4.0)", "mypy (>=1.4.1)", "types-setuptools (>=57.4)", "wheel (>=0.37)"]
 docs = ["Sphinx (>=5.0)", "furo (==2022.6.21)", "sphinx-autobuild (>=2021.3.14)", "sphinx-autodoc-typehints (>=1.12)"]
 pool = ["psycopg-pool"]
@@ -2046,12 +2046,12 @@ test = ["anyio (>=3.6.2,<4.0)", "mypy (>=1.4.1)", "pproxy (>=2.7)", "pytest (>=6
 
 [[package]]
 name = "psycopg-c"
-version = "3.1.13"
+version = "3.1.14"
 description = "PostgreSQL database adapter for Python -- C optimisation distribution"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "psycopg-c-3.1.13.tar.gz", hash = "sha256:a7f39d29e5ba46cdc5ff6b40a1e418dba034efd2faf7369a8b6d20effbd2a19d"},
+    {file = "psycopg-c-3.1.14.tar.gz", hash = "sha256:ed64efb056d67156064c0a386a258b2720c5988d5ec9a6d67fc86d4cdb9e0f24"},
 ]
 
 [[package]]
@@ -3333,4 +3333,4 @@ docs = ["django-debug-toolbar", "django-extensions", "sphinx", "sphinx-autobuild
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "658c1ffbf5afcf48c43228c867ffa3fce84aeaa6fba2fd6d01f14584d42b1b3e"
+content-hash = "2e1e22cc0e0b6a06ba18cf13cec0cb07ae9d2ce8a376682a421eabd7fbcff44a"
