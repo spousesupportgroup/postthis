@@ -40,7 +40,7 @@ optional = true
 [tool.poetry.group.local.dependencies]
 werkzeug = {version = "3.0.1", extras = ["watchdog"]}
 ipdb = "^0.13.13"
-psycopg = {version = "3.1.14", extras = ["c"]}
+psycopg = {version = "3.1.15", extras = ["c"]}
 watchfiles = "^0.21.0"
 mypy = "^1.6.1"
 django-stubs = {version = "4.2.7", extras = ["compatible-mypy"]}
@@ -70,7 +70,7 @@ optional = true
 
 [tool.poetry.group.production.dependencies]
 gunicorn = "^21.2.0"
-psycopg = {version = "3.1.14", extras = ["c"]}
+psycopg = {version = "3.1.15", extras = ["c"]}
 django-anymail = "10.2"
 
 [build-system]
