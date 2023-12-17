@@ -21,7 +21,7 @@ flower="^2.0.1"
 django="^4.2.8"
 django-environ="^0.11.1"
 django-model-utils="^4.3.1"
-django-allauth="^0.58.2"
+django-allauth="^0.59.0"
 django-crispy-forms="^2.1"
 crispy-bootstrap5="^0.7"
 django-redis="^5.4.0"
@@ -40,7 +40,7 @@ optional = true
 [tool.poetry.group.local.dependencies]
 werkzeug = {version = "3.0.1", extras = ["watchdog"]}
 ipdb = "^0.13.13"
-psycopg = {version = "3.1.14", extras = ["c"]}
+psycopg = {version = "3.1.15", extras = ["c"]}
 watchfiles = "^0.21.0"
 mypy = "^1.6.1"
 django-stubs = {version = "4.2.7", extras = ["compatible-mypy"]}
@@ -51,8 +51,8 @@ sphinx-autobuild = "^2021.3.14"
 sphinx_rtd_theme = "^2.0.0"
 flake8="^6.1.0"
 flake8-isort="^6.1.1"
-coverage="^7.3.2"
-black="^23.11.0"
+coverage="^7.3.3"
+black="^23.12.0"
 djlint="^1.34.0"
 pylint = "^2.17.7"
 pylint-django="^2.5.5"
@@ -70,7 +70,7 @@ optional = true
 
 [tool.poetry.group.production.dependencies]
 gunicorn = "^21.2.0"
-psycopg = {version = "3.1.14", extras = ["c"]}
+psycopg = {version = "3.1.15", extras = ["c"]}
 django-anymail = "10.2"
 
 [build-system]
