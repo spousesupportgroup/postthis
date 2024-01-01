@@ -44,7 +44,7 @@ psycopg = {version = "3.1.16", extras = ["c"]}
 watchfiles = "^0.21.0"
 mypy = "^1.6.1"
 django-stubs = {version = "4.2.7", extras = ["compatible-mypy"]}
-pytest = "^7.4.3"
+pytest = "^7.4.4"
 pytest-sugar = "^0.9.7"
 sphinx = "^7.2.6"
 sphinx-autobuild = "^2021.3.14"
