@@ -23,7 +23,7 @@ django-environ="^0.11.1"
 django-model-utils="^4.3.1"
 django-allauth="^0.60.1"
 django-crispy-forms="^2.1"
-crispy-bootstrap5="^0.7"
+crispy-bootstrap5="^2023.10"
 django-redis="^5.4.0"
 sphinx = { version = "^7.2.6", optional = true }
 sphinx-autobuild = { version = "^2021.3.14", optional = true }
@@ -72,6 +72,10 @@ optional = true
 gunicorn = "^21.2.0"
 psycopg = {version = "3.1.17", extras = ["c"]}
 django-anymail = "10.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
 
 [build-system]
 requires = ["poetry-core"]
