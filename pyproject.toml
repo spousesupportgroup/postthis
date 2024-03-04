@@ -23,7 +23,7 @@ django-environ="^0.11.1"
 django-model-utils="^4.4.0"
 django-allauth="^0.61.1"
 django-crispy-forms="^2.1"
-crispy-bootstrap5="^2023.10"
+crispy-bootstrap5="^2024.2"
 django-redis="^5.4.0"
 sphinx = { version = "^7.2.6", optional = true }
 sphinx-autobuild = { version = "^2024.2.4", optional = true }
