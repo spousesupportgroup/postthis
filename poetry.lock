@@ -829,19 +829,18 @@ resend = ["svix"]
 
 [[package]]
 name = "django-celery-beat"
-version = "2.5.0"
+version = "2.6.0"
 description = "Database-backed Periodic Tasks."
 optional = false
 python-versions = "*"
 files = [
-    {file = "django-celery-beat-2.5.0.tar.gz", hash = "sha256:cd0a47f5958402f51ac0c715bc942ae33d7b50b4e48cba91bc3f2712be505df1"},
-    {file = "django_celery_beat-2.5.0-py3-none-any.whl", hash = "sha256:ae460faa5ea142fba0875409095d22f6bd7bcc7377889b85e8cab5c0dfb781fe"},
+    {file = "django-celery-beat-2.6.0.tar.gz", hash = "sha256:f75b2d129731f1214be8383e18fae6bfeacdb55dffb2116ce849222c0106f9ad"},
 ]
 
 [package.dependencies]
 celery = ">=5.2.3,<6.0"
 cron-descriptor = ">=1.2.32"
-Django = ">=2.2,<5.0"
+Django = ">=2.2,<5.1"
 django-timezone-field = ">=5.0"
 python-crontab = ">=2.3.4"
 tzdata = "*"
@@ -3218,4 +3217,4 @@ docs = ["django-debug-toolbar", "django-extensions", "sphinx", "sphinx-autobuild
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "09b99ea0409ecfcc21d5678eb07da2c75cba80eee18bd70fb42be8434e31d6ce"
+content-hash = "e2f5346f6b1cee15c0df7e8a115b6d0a6e5efc644ed0a9fcd74f5d17e8aac60f"
