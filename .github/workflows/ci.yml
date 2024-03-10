@@ -53,17 +53,6 @@ jobs:
         if: ${{ runner.os == 'Linux' }}
         run: docker compose -f local.yml run django python print-coverage.py >> $GITHUB_ENV
 
-      - name: Create coverage badge
-        if: ${{ github.ref == 'refs/heads/main' && github.repository == 'spousesupportgroup/postthis' && github.event_name == 'push' && runner.os == 'Linux' }}
-        uses: schneegans/dynamic-badges-action@v1.7.0
-        with:
-          auth: ${{ secrets.GIST_SECRET }}
-          gistID: 0a3c8a2a341a5faf43c6cf3fe0bafbe1
-          filename: spousesupportgroup-postthis-coverage.json
-          label: Coverage
-          message: ${{ env.COVERAGE }}
-          color: ${{ env.COVERAGE_COLOR }}
-
       - name: Codeclimate coverage
         uses: paambaati/codeclimate-action@v5.0.0
         env:
