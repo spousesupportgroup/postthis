@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/spousesupportgroup/postthis/compare/v0.1.0...v0.1.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* remove unneeded package-name ([9e8e5b1](https://github.com/spousesupportgroup/postthis/commit/9e8e5b1b1e0623b884b9ea15d6997c5496e7c57f))
+
 ## [0.1.0](https://github.com/spousesupportgroup/postthis/compare/v0.0.17...v0.1.0) (2023-12-11)
 
 
