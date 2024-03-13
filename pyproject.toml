@@ -71,7 +71,7 @@ optional = true
 [tool.poetry.group.production.dependencies]
 gunicorn = "^21.2.0"
 psycopg = {version = "3.1.18", extras = ["c"]}
-django-anymail = "10.2"
+django-anymail = "10.3"
 
 
 [tool.poetry.group.dev.dependencies]
