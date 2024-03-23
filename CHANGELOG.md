@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.2](https://github.com/spousesupportgroup/postthis/compare/v0.1.1...v0.1.2) (2024-03-23)
+
+
+### Dependencies
+
+* **pip:** bump black from 24.2.0 to 24.3.0 ([d1f37b0](https://github.com/spousesupportgroup/postthis/commit/d1f37b0286837c4cde38ceeee6f8a54f63e6f8ff))
+* **pip:** bump coverage from 7.4.3 to 7.4.4 ([e31876a](https://github.com/spousesupportgroup/postthis/commit/e31876a7b0564e4506fe475a54c768c13797fd4d))
+* **pip:** bump django-anymail from 10.2 to 10.3 ([be867ef](https://github.com/spousesupportgroup/postthis/commit/be867eff17dcc06c037fe690690a7f0f9c766547))
+* **pip:** bump pytest from 8.0.2 to 8.1.1 ([1896d2d](https://github.com/spousesupportgroup/postthis/commit/1896d2d8818b245a0715b1dbe027042ade489cc0))
+* **pip:** bump redis from 5.0.2 to 5.0.3 ([68e3861](https://github.com/spousesupportgroup/postthis/commit/68e3861713292ff49543a530cec61d9e5ed478fa))
+
 ## [0.1.1](https://github.com/spousesupportgroup/postthis/compare/v0.1.0...v0.1.1) (2024-03-10)
 
 
