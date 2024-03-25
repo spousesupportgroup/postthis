@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/spousesupportgroup/postthis/compare/v0.1.2...v0.1.3) (2024-03-25)
+
+
+### Dependencies
+
+* **pip:** bump pre-commit from 3.6.2 to 3.7.0 ([16e45d6](https://github.com/spousesupportgroup/postthis/commit/16e45d6721194b1960dd698fd6533b02f3e3201f))
+
 ## [0.1.2](https://github.com/spousesupportgroup/postthis/compare/v0.1.1...v0.1.2) (2024-03-23)
 
 
