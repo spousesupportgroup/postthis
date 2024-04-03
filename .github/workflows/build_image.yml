@@ -5,8 +5,8 @@ on:
   push:
     tags:
       - "v*.*.*"
-  schedule:
-    - cron: "42 4 * * *"
+  # schedule:
+  #   - cron: "42 4 * * *"
 
 jobs:
   docker:
