@@ -25,7 +25,7 @@ django-allauth="^0.61.1"
 django-crispy-forms="^2.1"
 crispy-bootstrap5="^2024.2"
 django-redis="^5.4.0"
-sphinx = { version = "^7.3.6", optional = true }
+sphinx = { version = "^7.3.7", optional = true }
 sphinx-autobuild = { version = "^2024.4.16", optional = true }
 sphinx_rtd_theme = { version = "^2.0.0", optional = true  }
 django-debug-toolbar = { version = "^4.2.0", optional = true  }
@@ -46,7 +46,7 @@ mypy = "^1.6.1"
 django-stubs = {version = "4.2.7", extras = ["compatible-mypy"]}
 pytest = "^8.1.1"
 pytest-sugar = "^1.0.0"
-sphinx = "^7.3.6"
+sphinx = "^7.3.7"
 sphinx-autobuild = "^2024.4.16"
 sphinx_rtd_theme = "^2.0.0"
 flake8="^7.0.0"
