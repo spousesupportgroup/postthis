@@ -38,7 +38,7 @@ docs = ["sphinx","sphinx-autobuild","sphinx_rtd_theme", "django-debug-toolbar", 
 optional = true
 
 [tool.poetry.group.local.dependencies]
-werkzeug = {version = "3.0.2", extras = ["watchdog"]}
+werkzeug = {version = "3.0.3", extras = ["watchdog"]}
 ipdb = "^0.13.13"
 psycopg = {version = "3.1.18", extras = ["c"]}
 watchfiles = "^0.21.0"
