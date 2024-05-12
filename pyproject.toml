@@ -18,9 +18,9 @@ hiredis="^2.3.2"
 celery="^5.4.0"
 django-celery-beat="^2.6.0"
 flower="^2.0.1"
-django="^4.2.11"
+django="^4.2.13"
 django-environ="^0.11.1"
-django-model-utils="^4.5.0"
+django-model-utils="^4.5.1"
 django-allauth="^0.62.1"
 django-crispy-forms="^2.1"
 crispy-bootstrap5="^2024.2"
@@ -38,7 +38,7 @@ docs = ["sphinx","sphinx-autobuild","sphinx_rtd_theme", "django-debug-toolbar", 
 optional = true
 
 [tool.poetry.group.local.dependencies]
-werkzeug = {version = "3.0.2", extras = ["watchdog"]}
+werkzeug = {version = "3.0.3", extras = ["watchdog"]}
 ipdb = "^0.13.13"
 psycopg = {version = "3.1.18", extras = ["c"]}
 watchfiles = "^0.21.0"
@@ -51,7 +51,7 @@ sphinx-autobuild = "^2024.4.16"
 sphinx_rtd_theme = "^2.0.0"
 flake8="^7.0.0"
 flake8-isort="^6.1.1"
-coverage="^7.5.0"
+coverage="^7.5.1"
 black="^24.4.2"
 djlint="^1.34.1"
 pylint = "^3.1.0"
