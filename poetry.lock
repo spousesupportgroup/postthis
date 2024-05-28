@@ -810,13 +810,13 @@ django = ">=4.2"
 
 [[package]]
 name = "django-debug-toolbar"
-version = "4.4.1"
+version = "4.4.2"
 description = "A configurable set of panels that display various debug information about the current request/response."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "django_debug_toolbar-4.4.1-py3-none-any.whl", hash = "sha256:d89c2c4539192a8bde497d3bbfa35b93001b5381f7dfc26921ca6bad6d95d9de"},
-    {file = "django_debug_toolbar-4.4.1.tar.gz", hash = "sha256:7a62d8696bdba0f0d6eda701e8a5e433f742b8a09ce1fd0b8f8d82af3b7adeb6"},
+    {file = "django_debug_toolbar-4.4.2-py3-none-any.whl", hash = "sha256:5d7afb2ea5f8730241e5b0735396e16cd1fd8c6b53a2f3e1e30bbab9abb23728"},
+    {file = "django_debug_toolbar-4.4.2.tar.gz", hash = "sha256:9204050fcb1e4f74216c5b024bc76081451926a6303993d6c513f5e142675927"},
 ]
 
 [package.dependencies]
@@ -3198,4 +3198,4 @@ docs = ["django-debug-toolbar", "django-extensions", "sphinx", "sphinx-autobuild
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "452d814c7613dd8040037b569fe1a21d78c31a5688ff2b31cb80be23bbecaac3"
+content-hash = "f130d8f6a017c98f48dfcfc9c90eea88a512eccb9af914506ec5c15e1ed1da33"
