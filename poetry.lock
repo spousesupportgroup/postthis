@@ -2490,13 +2490,13 @@ files = [
 
 [[package]]
 name = "sphinx"
-version = "7.4.4"
+version = "7.4.5"
 description = "Python documentation generator"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "sphinx-7.4.4-py3-none-any.whl", hash = "sha256:0b800d06701329cba601a40ab8c3d5afd8f7e3518f688dda61fd670effc327d2"},
-    {file = "sphinx-7.4.4.tar.gz", hash = "sha256:43c911f997a4530b6cffd4ff8d5516591f6c60d178591f4406f0dd02282e3f64"},
+    {file = "sphinx-7.4.5-py3-none-any.whl", hash = "sha256:9f135d8c1d277db67be514be579c4c4a26c8c0e962219aaca5a721b04bd6d0d8"},
+    {file = "sphinx-7.4.5.tar.gz", hash = "sha256:a4abe5385bf856df094c1e6cadf24a2351b12057be3670b99a12c05a01d209f5"},
 ]
 
 [package.dependencies]
@@ -3209,4 +3209,4 @@ docs = ["django-debug-toolbar", "django-extensions", "sphinx", "sphinx-autobuild
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "d7b5a2599eaf17921b5982fc5b70d330fe9590d927cad9d5ed3a80746dcbe928"
+content-hash = "5d91dd08a2b1359e86ff76976e06a3cf29b6be3094592a8864adbf2b6aa11430"
