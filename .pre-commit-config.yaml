@@ -1,10 +1,10 @@
 ---
 exclude: '^docs/|/migrations/|.devcontainer/devcontainer.json'
-default_stages: [commit]
+default_stages: [Nonepre-commitNone]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -19,19 +19,19 @@ repos:
       - id: detect-private-key
 
   - repo: https://github.com/adamchainz/django-upgrade
-    rev: '1.18.0'
+    rev: '1.21.0'
     hooks:
       - id: django-upgrade
         args: ['--target-version', '4.2']
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.16.0
+    rev: v3.17.0
     hooks:
       - id: pyupgrade
         args: [--py311-plus]
 
   - repo: https://github.com/psf/black
-    rev: 24.4.2
+    rev: 24.8.0
     hooks:
       - id: black
 
@@ -41,12 +41,12 @@ repos:
       - id: isort
 
   - repo: https://github.com/PyCQA/flake8
-    rev: 7.1.0
+    rev: 7.1.1
     hooks:
       - id: flake8
 
   - repo: https://github.com/Riverside-Healthcare/djLint
-    rev: v1.34.1
+    rev: v1.35.2
     hooks:
       - id: djlint-reformat-django
       - id: djlint-django
