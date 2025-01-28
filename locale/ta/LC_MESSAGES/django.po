@@ -1,0 +1,337 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-27 14:02+0200\n"
+"PO-Revision-Date: 2025-01-27 15:02+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/postthis/postthis/"
+"ta/>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
+
+# Translations for the postthis project
+#: postthis/templates/account/account_inactive.html:5
+#: postthis/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr "கணக்கு செயலற்றது"
+
+#: postthis/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr "இந்த கணக்கு செயலற்றது."
+
+#: postthis/templates/account/email.html:7
+msgid "Account"
+msgstr "கணக்கு"
+
+#: postthis/templates/account/email.html:10
+msgid "E-mail Addresses"
+msgstr "மின்னஞ்சல் முகவரிகள்"
+
+#: postthis/templates/account/email.html:13
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "பின்வரும் மின்னஞ்சல் முகவரிகள் உங்கள் கணக்குடன் தொடர்புடையவை:"
+
+#: postthis/templates/account/email.html:27
+msgid "Verified"
+msgstr "சரிபார்க்கப்பட்டது"
+
+#: postthis/templates/account/email.html:29
+msgid "Unverified"
+msgstr "சரிபார்க்கப்படாதது"
+
+#: postthis/templates/account/email.html:31
+msgid "Primary"
+msgstr "முதன்மை"
+
+#: postthis/templates/account/email.html:37
+msgid "Make Primary"
+msgstr "முதன்மை செய்யுங்கள்"
+
+#: postthis/templates/account/email.html:38
+msgid "Re-send Verification"
+msgstr "சரிபார்ப்பு சரிபார்ப்பு"
+
+#: postthis/templates/account/email.html:39
+msgid "Remove"
+msgstr "அகற்று"
+
+#: postthis/templates/account/email.html:46
+msgid "Warning:"
+msgstr "எச்சரிக்கை:"
+
+#: postthis/templates/account/email.html:46
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"உங்களிடம் தற்போது எந்த மின்னஞ்சல் முகவரியும் அமைக்கப்படவில்லை. நீங்கள் உண்மையில் ஒரு மின்னஞ்சல் "
+"முகவரியைச் சேர்க்க வேண்டும், எனவே நீங்கள் அறிவிப்புகளைப் பெறலாம், உங்கள் கடவுச்சொல்லை "
+"மீட்டமைக்கலாம்."
+
+#: postthis/templates/account/email.html:51
+msgid "Add E-mail Address"
+msgstr "மின்னஞ்சல் முகவரியைச் சேர்க்கவும்"
+
+#: postthis/templates/account/email.html:56
+msgid "Add E-mail"
+msgstr "மின்னஞ்சல் சேர்க்கவும்"
+
+#: postthis/templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "தேர்ந்தெடுக்கப்பட்ட மின்னஞ்சல் முகவரியை அகற்ற விரும்புகிறீர்களா?"
+
+#: postthis/templates/account/email_confirm.html:6
+#: postthis/templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "மின்னஞ்சல் முகவரியை உறுதிப்படுத்தவும்"
+
+#: postthis/templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"<a href=\"mailto:%(email)s\">%(email)s </a> என்பது பயனர்%(user_display)s க்கான "
+"மின்னஞ்சல் முகவரி என்பதை உறுதிப்படுத்தவும்."
+
+#: postthis/templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "உறுதிப்படுத்தவும்"
+
+#: postthis/templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"இந்த மின்னஞ்சல் உறுதிப்படுத்தல் இணைப்பு காலாவதியானது அல்லது தவறானது. தயவுசெய்து <a "
+"href=\"%(email_url)s\"> புதிய மின்னஞ்சல் உறுதிப்படுத்தல் கோரிக்கையை வழங்கவும் </a>."
+
+#: postthis/templates/account/login.html:7
+#: postthis/templates/account/login.html:11
+#: postthis/templates/account/login.html:56 postthis/templates/base.html:72
+msgid "Sign In"
+msgstr "விடுபதிகை"
+
+#: postthis/templates/account/login.html:17
+msgid "Please sign in with one of your existing third party accounts:"
+msgstr "உங்கள் தற்போதைய மூன்றாம் தரப்பு கணக்குகளில் ஒன்றில் உள்நுழைக:"
+
+#: postthis/templates/account/login.html:19
+#, python-format
+msgid ""
+"Or, <a href=\"%(signup_url)s\">sign up</a> for a %(site_name)s account and "
+"sign in below:"
+msgstr ""
+"அல்லது, <a href=\" %(signup_url)s\"> ஒரு %(site_name)sணக்கிற்கு பதிவுசெய்து கீழே "
+"உள்நுழைக:</a>"
+
+#: postthis/templates/account/login.html:32
+msgid "or"
+msgstr "அல்லது"
+
+#: postthis/templates/account/login.html:41
+#, python-format
+msgid ""
+"If you have not created an account yet, then please <a "
+"href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"நீங்கள் இன்னும் ஒரு கணக்கை உருவாக்கவில்லை என்றால், தயவுசெய்து <a href=\"%(signup_url)s\""
+"> பதிவுசெய்க </a> முதலில்."
+
+#: postthis/templates/account/login.html:55
+msgid "Forgot Password?"
+msgstr "கடவுச்சொல்லை மறந்துவிட்டீர்களா?"
+
+#: postthis/templates/account/logout.html:5
+#: postthis/templates/account/logout.html:8
+#: postthis/templates/account/logout.html:17 postthis/templates/base.html:61
+msgid "Sign Out"
+msgstr "விடுபதிகை"
+
+#: postthis/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "நீங்கள் உறுதியாக உள்நுழைய விரும்புகிறீர்களா?"
+
+#: postthis/templates/account/password_change.html:6
+#: postthis/templates/account/password_change.html:9
+#: postthis/templates/account/password_change.html:14
+#: postthis/templates/account/password_reset_from_key.html:5
+#: postthis/templates/account/password_reset_from_key.html:8
+#: postthis/templates/account/password_reset_from_key_done.html:4
+#: postthis/templates/account/password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr "கடவுச்சொல்லை மாற்றவும்"
+
+#: postthis/templates/account/password_reset.html:7
+#: postthis/templates/account/password_reset.html:11
+#: postthis/templates/account/password_reset_done.html:6
+#: postthis/templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr "கடவுச்சொல் மீட்டமைப்பு"
+
+#: postthis/templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"உங்கள் கடவுச்சொல்லை மறந்துவிட்டீர்களா? உங்கள் மின்னஞ்சல் முகவரியை கீழே உள்ளிடவும், அதை மீட்டமைக்"
+"க அனுமதிக்கும் ஒரு மின்னஞ்சலை நாங்கள் உங்களுக்கு அனுப்புவோம்."
+
+#: postthis/templates/account/password_reset.html:21
+msgid "Reset My Password"
+msgstr "எனது கடவுச்சொல்லை மீட்டமைக்கவும்"
+
+#: postthis/templates/account/password_reset.html:24
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+"உங்கள் கடவுச்சொல்லை மீட்டமைப்பதில் ஏதேனும் சிக்கல் இருந்தால் தயவுசெய்து எங்களை தொடர்பு "
+"கொள்ளவும்."
+
+#: postthis/templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"நாங்கள் உங்களுக்கு ஒரு மின்னஞ்சல் அனுப்பியுள்ளோம். சில நிமிடங்களுக்குள் நீங்கள் அதைப் பெறவில்லை"
+" என்றால் எங்களை தொடர்பு கொள்ளவும்."
+
+#: postthis/templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr "மோசமான கிள்ளாக்கு"
+
+#: postthis/templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"கடவுச்சொல் மீட்டமைப்பு இணைப்பு தவறானது, ஏனெனில் அது ஏற்கனவே பயன்படுத்தப்பட்டிருப்பதால். "
+"தயவுசெய்து ஒரு <a href=\"%(passwd_reset_url)s\"> புதிய கடவுச்சொல் மீட்டமை </a> ஐக் "
+"கோருங்கள்."
+
+#: postthis/templates/account/password_reset_from_key.html:18
+msgid "change password"
+msgstr "கடவுச்சொல்லை மாற்றவும்"
+
+#: postthis/templates/account/password_reset_from_key.html:21
+#: postthis/templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr "உங்கள் கடவுச்சொல் இப்போது மாற்றப்பட்டுள்ளது."
+
+#: postthis/templates/account/password_set.html:6
+#: postthis/templates/account/password_set.html:9
+#: postthis/templates/account/password_set.html:14
+msgid "Set Password"
+msgstr "கடவுச்சொல்லை அமைக்கவும்"
+
+#: postthis/templates/account/signup.html:6
+msgid "Signup"
+msgstr "பதிவுபெறுதல்"
+
+#: postthis/templates/account/signup.html:9
+#: postthis/templates/account/signup.html:19 postthis/templates/base.html:67
+msgid "Sign Up"
+msgstr "பதிவு செய்க"
+
+#: postthis/templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+"ஏற்கனவே ஒரு கணக்கு இருக்கிறதா? தயவுசெய்து <a href=\"%(login_url)s\"> </a> இல் "
+"உள்நுழைக."
+
+#: postthis/templates/account/signup_closed.html:5
+#: postthis/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr "பதிவு மூடியது"
+
+#: postthis/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr "மன்னிக்கவும், ஆனால் பதிவுபெறுவது தற்போது மூடப்பட்டுள்ளது."
+
+#: postthis/templates/account/verification_sent.html:5
+#: postthis/templates/account/verification_sent.html:8
+#: postthis/templates/account/verified_email_required.html:5
+#: postthis/templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr "உங்கள் மின்னஞ்சல் முகவரியை சரிபார்க்கவும்"
+
+#: postthis/templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+"சரிபார்ப்புக்காக நாங்கள் உங்களுக்கு ஒரு மின்னஞ்சல் அனுப்பியுள்ளோம். பதிவுபெறும் செயல்முறையை "
+"இறுதி செய்ய வழங்கப்பட்ட இணைப்பைப் பின்தொடரவும். சில நிமிடங்களுக்குள் நீங்கள் அதைப் பெறவில்லை "
+"என்றால் எங்களை தொடர்பு கொள்ளவும்."
+
+#: postthis/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+"தளத்தின் இந்த பகுதி அதை சரிபார்க்க வேண்டும்\n"
+" நீங்கள் யார் என்று கூறுகிறீர்கள். இந்த நோக்கத்திற்காக, நீங்கள் வேண்டும் என்று நாங்கள் கோருகிறோம்"
+"\n"
+" உங்கள் மின்னஞ்சல் முகவரியின் உரிமையை சரிபார்க்கவும். "
+
+#: postthis/templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+"நாங்கள் உங்களுக்கு ஒரு மின்னஞ்சல் அனுப்பியுள்ளோம்\n"
+" சரிபார்ப்பு. இந்த மின்னஞ்சலுக்குள் உள்ள இணைப்பைக் சொடுக்கு செய்க. தயவுசெய்து\n"
+" சில நிமிடங்களுக்குள் நீங்கள் அதைப் பெறவில்லை என்றால் எங்களைத் தொடர்பு கொள்ளுங்கள்."
+
+#: postthis/templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+"<strong> குறிப்பு: </strong> நீங்கள் இன்னும் <a href=\"%(email_url)s\"> உங்கள் "
+"மின்னஞ்சல் முகவரியை மாற்றலாம் </a>."
+
+#: postthis/templates/base.html:57
+msgid "My Profile"
+msgstr "எனது சுயவிவரம்"
+
+#: postthis/users/admin.py:17
+msgid "Personal info"
+msgstr "தனிப்பட்ட செய்தி"
+
+#: postthis/users/admin.py:19
+msgid "Permissions"
+msgstr "அனுமதிகள்"
+
+#: postthis/users/admin.py:30
+msgid "Important dates"
+msgstr "முக்கியமான தேதிகள்"
+
+#: postthis/users/apps.py:7
+msgid "Users"
+msgstr "பயனர்கள்"
+
+#: postthis/users/forms.py:24 postthis/users/tests/test_forms.py:36
+msgid "This username has already been taken."
+msgstr "இந்த பயனர்பெயர் ஏற்கனவே எடுக்கப்பட்டுள்ளது."
+
+#: postthis/users/models.py:15
+msgid "Name of User"
+msgstr "பயனரின் பெயர்"
+
+#: postthis/users/views.py:23
+msgid "Information successfully updated"
+msgstr "செய்தி வெற்றிகரமாக புதுப்பிக்கப்பட்டது"
