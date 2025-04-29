@@ -54,7 +54,7 @@ jobs:
         run: docker compose -f local.yml run django python print-coverage.py >> $GITHUB_ENV
 
       - name: Codeclimate coverage
-        uses: paambaati/codeclimate-action@v6.0.0
+        uses: paambaati/codeclimate-action@v9.0.0
         env:
           CC_TEST_REPORTER_ID: a41bb8017a76686765e9ef1a45667237e401932ec1f6c61ac713a402dfbf5ef7
 
