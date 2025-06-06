@@ -733,14 +733,14 @@ files = [
 
 [[package]]
 name = "django"
-version = "4.2.21"
+version = "4.2.22"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 optional = false
 python-versions = ">=3.8"
 groups = ["main", "local", "production"]
 files = [
-    {file = "django-4.2.21-py3-none-any.whl", hash = "sha256:1d658c7bf5d31c7d0cac1cab58bc1f822df89255080fec81909256c30e6180b3"},
-    {file = "django-4.2.21.tar.gz", hash = "sha256:b54ac28d6aa964fc7c2f7335138a54d78980232011e0cd2231d04eed393dcb0d"},
+    {file = "django-4.2.22-py3-none-any.whl", hash = "sha256:0a32773b5b7f4e774a155ee253ab24a841fed7e9e9061db08bf2ce9711da404d"},
+    {file = "django-4.2.22.tar.gz", hash = "sha256:e726764b094407c313adba5e2e866ab88f00436cad85c540a5bf76dc0a912c9e"},
 ]
 
 [package.dependencies]
@@ -3372,4 +3372,4 @@ docs = ["django-debug-toolbar", "django-extensions", "sphinx", "sphinx-autobuild
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9"
-content-hash = "0b48d17e510cbe54cc664d27b5f4c3dbf499d6aa795a9fdf2f8894fca4367397"
+content-hash = "6f80b4ad26a61c1cb9660eebcc63028243141f127ace41b27d37ce258d700723"
