@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "postthis"
-version = "0.1.2"
+version = "0.1.0"
 description = ""
 authors = ["Hendrik <andurin@process-zero.de>"]
 readme = "README.md"
