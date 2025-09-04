@@ -775,25 +775,26 @@ steam = ["python3-openid (>=3.0.8)"]
 
 [[package]]
 name = "django-anymail"
-version = "10.3"
-description = "Django email backends and webhooks for Amazon SES, Brevo (Sendinblue),     MailerSend, Mailgun, Mailjet, Mandrill, Postal, Postmark, Resend,     SendGrid, SparkPost and Unisender Go"
+version = "13.1"
+description = "Django email backends and webhooks for Amazon SES, Brevo,  MailerSend, Mailgun, Mailjet, Mandrill, Postal, Postmark, Resend,  Scaleway TEM, SendGrid, SparkPost, and Unisender Go  (EmailBackend, transactional email tracking and inbound email signals)"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 groups = ["production"]
 files = [
-    {file = "django_anymail-10.3-py3-none-any.whl", hash = "sha256:1e72f059e96930d3675d35fe4c61f82b138ae4a7fcb0337be39dcb4823f94a4f"},
-    {file = "django_anymail-10.3.tar.gz", hash = "sha256:35d8ec20b06000af3c1638492e32f416fd1a584f0a572cded03f1bc570169ed0"},
+    {file = "django_anymail-13.1-py3-none-any.whl", hash = "sha256:63e48402ec8258f17640eb73c8c64141f16d2f8ae7d448d0fb1c66e82b7cbcf6"},
+    {file = "django_anymail-13.1.tar.gz", hash = "sha256:b51783176f8a8382e958808151551558e4a46d1375fbc343742d1ebd06ce8e9e"},
 ]
 
 [package.dependencies]
-django = ">=2.0"
+django = ">=4.0"
 requests = ">=2.4.3"
 urllib3 = ">=1.25.0"
 
 [package.extras]
-amazon-ses = ["boto3"]
-postal = ["cryptography ; sys_platform != \"darwin\" or platform_machine != \"arm64\" or python_version >= \"3.9\""]
+amazon-ses = ["boto3 (>=1.24.6)"]
+postal = ["cryptography ; python_version >= \"3.9\""]
 resend = ["svix"]
+sendgrid = ["cryptography ; python_version >= \"3.9\""]
 
 [[package]]
 name = "django-celery-beat"
@@ -3372,4 +3373,4 @@ docs = ["django-debug-toolbar", "django-extensions", "sphinx", "sphinx-autobuild
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9"
-content-hash = "6f80b4ad26a61c1cb9660eebcc63028243141f127ace41b27d37ce258d700723"
+content-hash = "3138702feb9a3f0f7b092f17b7f6dfbdaac24978fa8c7be75adf3f9e8100f798"
